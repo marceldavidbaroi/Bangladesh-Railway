@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Eticket">
+
+    <RelativeLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#35BBCA"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/window_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+            android:text=" E-ticket "
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_header"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/bg">
+
+            <TextView
+
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="Bangladesh Railway Your E-ticket"
+                android:textAlignment="center"
+                android:textSize="30dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#8035BBCA"
+                android:orientation="vertical"
+                android:padding="30dp">
+
+
+                <TextView
+                    android:id="@+id/TPhone_tv"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Phone number: "
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/TPhone2_tv"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="x"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/Tfrom_tv"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="From: "
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold"  />
+                <TextView
+                    android:id="@+id/Tfrom2_tv"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="x"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/Tto_tv"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="To: "
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/Tto2_tv"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="x"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/TDFJ_tv"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Date of Journey: "
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/TDFJ2_tv"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="x"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="italic" />
+                <TextView
+                    android:id="@+id/Tclass_tv"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Class: "
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/Tclass2_tv"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="x"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="italic" />
+                <TextView
+                    android:id="@+id/Ttime_tv"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Time: "
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/Ttime2_tv"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="x"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="italic" />
+                <TextView
+                    android:id="@+id/Ttrain_tv"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Train "
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/Ttrain2_tv"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="x"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="italic" />
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/print_btn"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="90dp"
+                android:backgroundTint="#E2F3D931"
+                android:text="Print"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/layout_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#40FFFFFF">
+
+        <TextView
+            android:id="@+id/home_vec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:drawableTop="@drawable/ic_baseline_home_24"
+            />
+
+
+        <TextView
+            android:id="@+id/ticket_vec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/home_vec"
+            android:drawableTop="@drawable/ic_baseline_article_24"
+            android:paddingRight="40dp"
+
+            />
+
+        <TextView
+            android:id="@+id/user_vec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/home_vec"
+            android:drawableTop="@drawable/ic_baseline_info_24"
+            android:paddingLeft="40dp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

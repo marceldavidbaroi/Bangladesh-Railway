@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Bangladesh Railway</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string-array name="class_list">
+        <item>AC</item>
+        <item>Non_AC</item>
+        <item>F_Chair</item>
+        <item>S_Seat</item>
+        <item>F_Seat</item>
+    </string-array>
+    <string-array name="train_list">
+        <item>Ekota express</item>
+        <item>Nilshagor express</item>
+        <item>Kurigram express</item>
+        <item>Panchagarh express</item>
+        <item>Moitri Express</item>
+        <item>Shimanto</item>
+        <item>Borendro</item>
+        <item>Rupsa</item>
+        <item>7up</item>
+        <item>Computer</item>
+    </string-array>
+</resources>

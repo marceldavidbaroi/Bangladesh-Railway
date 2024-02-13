@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Payment">
+    <RelativeLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#35BBCA"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/window_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+            android:text=" Payment "
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_header"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/bg">
+
+            <TextView
+
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="Bangladesh Railway Payment Method"
+                android:textAlignment="center"
+                android:textSize="30dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#8035BBCA"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <RadioGroup
+                    android:id="@+id/PaymentType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Bus_type_tv"
+                    android:layout_marginLeft="20dp">
+                    <!--radio button-->
+                    <RadioButton
+                        android:id="@+id/radio_PAY"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pay on arrival station"
+                        android:textSize="14dp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_Bkash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bkash"
+                        android:textSize="14dp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_Nagad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nagad"
+                        android:textSize="14dp" />
+                    <RadioButton
+                        android:id="@+id/radio_Rocket"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rocket"
+                        android:textSize="14dp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/select_btn"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#E2F3D931"
+                android:text="select"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/layout_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#40FFFFFF">
+
+        <TextView
+            android:id="@+id/home_vec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:drawableTop="@drawable/ic_baseline_home_24"
+            />
+
+
+        <TextView
+            android:id="@+id/ticket_vec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/home_vec"
+            android:drawableTop="@drawable/ic_baseline_article_24"
+            android:paddingRight="40dp"
+
+            />
+
+        <TextView
+            android:id="@+id/user_vec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/home_vec"
+            android:drawableTop="@drawable/ic_baseline_info_24"
+            android:paddingLeft="40dp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
